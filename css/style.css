@@ -1,0 +1,137 @@
+:root {
+    --primary-mode-background-color: #eeeeee;
+    --primary-mode-portal-bkg-color: #f7f7f7;
+    --primary-mode-secondary-color: #f7f7f7;
+    --primary-mode-strong-color: #d7e3e9;
+    --primary-mode-text-color: #000;
+    --primary-mode-bright-color: #3399ff;
+    --std-color-action-btn: #fafafa;
+}
+
+
+body {
+    font-family: 'Ropa Sans', 'Arial', sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    overflow: none;
+    margin: 0px;
+}
+
+input[type="button"] {
+    font-family: 'Ropa Sans', 'Arial', sans-serif;
+}
+
+.arrow {
+    border: solid #c2c2c2;
+    border-top-width: medium;
+    border-right-width: medium;
+    border-bottom-width: medium;
+    border-left-width: medium;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    position: relative;
+}
+
+.arrow-down {
+    top: 0.35rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+.arrow-up {
+    top: 0.7rem;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.btn-style {
+    border: none;
+    color: var(--std-color-action-btn);
+    cursor: pointer;
+    display: inline;
+    font-size: 16px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dynamic-card-line {
+    margin-bottom: 16px;
+}
+
+.dynamic-card-line-input {
+    border: none;
+    border-bottom-width: medium;
+    border-bottom-style: none;
+    border-bottom-color: currentcolor;
+    display: inline-block;
+    font-size: 16px;
+    min-width: 300px;
+    outline: none;
+}
+
+.dynamic-card-line-input::placeholder{
+    color: #c2c2c2;
+    font-style: italic;
+}
+
+.float-right {
+    float: right;
+}
+
+.primary-mode {
+    background-color: var(--primary-mode-background-color);
+    color: var(--primary-mode-text-color);
+}
+
+.portal-main {
+    border-radius: .6em;
+    display: block;
+    font-size: 1rem;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    width: 400px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.settings-container{
+    background-color: none;
+}
+
+.settings-container:hover{
+    background-color: #9999ff;
+}
+
+.dynamic-card-line-input:focus{
+    border: none;
+}
+
+.primary-mode .portal-main {
+    background-color: var(--primary-mode-portal-bkg-color);
+}
+
+.primary-mode .dynamic-card-line-input {
+    background-color: var(--primary-mode-secondary-color);
+    border-bottom: 2px solid var(--primary-mode-strong-color);
+    color: var(--primary-mode-text-color);
+}
+.primary-mode .dynamic-card-line-input:focus{
+    border-bottom: 2px solid var(--primary-mode-bright-color);
+}
+.secondary-mode .dynamic-card-line-input{
+    background-color: var(--secondary-mode-secondary-color);
+    border-bottom: 1px solid var(--secondary-mode-strong-color);
+    color: var(--secondary-mode-text-color);
+}
+.secondary-mode .dynamic-card-line-input:focus{
+    border-bottom: 2px solid var(--secondary-mode-bright-color);
+}
+
+
